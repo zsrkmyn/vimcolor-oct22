@@ -1,7 +1,7 @@
 " Vim color file
 " Author: Stephen Zhang <zsrkmyn at gmail dot com>
 " Created On: Oct. 22, 2016
-" Revision: 124
+" Revision: 3
 " License: MIT
 
 " *NOTE*:
@@ -55,9 +55,9 @@ hi Pmenu          ctermfg=16 ctermbg=162
 hi PmenuSel       ctermfg=16 ctermbg=248
 hi PmenuSbar      ctermbg=248
 hi PmenuThumb     ctermbg=16
-hi TabLine        cterm=underline ctermfg=16 ctermbg=7
-hi TabLineSel     cterm=bold
-hi TabLineFill    cterm=reverse
+hi TabLine        cterm=underline ctermbg=16 ctermfg=249
+hi TabLineSel     cterm=underline ctermbg=24 ctermfg=249
+hi TabLineFill    ctermbg=16 ctermfg=16
 hi CursorColumn   ctermbg=7
 hi CursorLine     cterm=underline
 hi ColorColumn    ctermbg=224
