@@ -58,8 +58,8 @@ hi PmenuThumb     ctermbg=16
 hi TabLine        cterm=underline ctermbg=16 ctermfg=249
 hi TabLineSel     cterm=underline ctermbg=24 ctermfg=249
 hi TabLineFill    ctermbg=16 ctermfg=16
-hi CursorColumn   ctermbg=7
-hi CursorLine     cterm=underline
+hi CursorColumn   ctermbg=235
+hi CursorLine     cterm=None ctermbg=235
 hi ColorColumn    ctermbg=224
 hi MatchParen     ctermbg=44
 
