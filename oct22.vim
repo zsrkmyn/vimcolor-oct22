@@ -6,8 +6,8 @@
 
 " *NOTE*:
 " This file is for 256-color terminal only!
-" If it does't work in an 256-color terminal,
-" check your `TERM' environment variable.
+" If it does't work in a non-256-color terminal.
+" Please check `TERM' environment variable.
 
 hi clear Normal
 set bg&
@@ -19,19 +19,21 @@ endif
 
 let g:colors_name = "oct22"
 
+hi Normal         ctermbg=234
+
 hi SpecialKey     ctermfg=4
 hi link EndOfBuffer NonText
 hi NonText        ctermfg=12
 hi Directory      ctermfg=4
 hi ErrorMsg       ctermfg=15 ctermbg=124
 hi IncSearch      cterm=reverse
-hi Search         ctermbg=129
+hi Search         cterm=reverse ctermfg=214 ctermbg=234
 hi MoreMsg        ctermfg=2
-hi ModeMsg        cterm=bold
+hi ModeMsg        cterm=NONE
 hi LineNr         ctermfg=172
 hi CursorLineNr   ctermfg=178
 hi Question       ctermfg=124
-hi StatusLine     cterm=bold,reverse
+hi StatusLine     cterm=none,reverse
 hi StatusLineNC   cterm=reverse
 hi VertSplit      cterm=reverse
 hi Title          ctermfg=96
@@ -64,13 +66,15 @@ hi CursorLine     cterm=None ctermbg=235
 hi ColorColumn    ctermbg=224
 hi MatchParen     ctermbg=44
 
-hi Comment        cterm=NONE ctermfg=36 ctermbg=NONE
-hi Constant       cterm=NONE ctermfg=32 ctermbg=NONE
+hi StorageClass   cterm=NONE ctermfg=105 ctermbg=NONE
+hi Structure      cterm=NONE ctermfg=105 ctermbg=NONE
+hi Comment        cterm=NONE ctermfg=37 ctermbg=NONE
+hi Constant       cterm=NONE ctermfg=33 ctermbg=NONE
 hi Special        cterm=NONE ctermfg=63 ctermbg=NONE
-hi Identifier     cterm=bold ctermfg=36 ctermbg=NONE
-hi Statement      cterm=NONE ctermfg=178 ctermbg=NONE
-hi PreProc        cterm=NONE ctermfg=128 ctermbg=NONE
-hi Type           cterm=NONE ctermfg=76 ctermbg=NONE
+hi Identifier     cterm=NONE ctermfg=39 ctermbg=NONE
+hi Statement      cterm=NONE ctermfg=203 ctermbg=NONE
+hi PreProc        cterm=NONE ctermfg=169 ctermbg=NONE
+hi Type           cterm=NONE ctermfg=178 ctermbg=NONE
 hi Underlined     cterm=underline ctermfg=51
 hi Ignore         cterm=NONE ctermfg=16 ctermbg=NONE
 hi Todo           ctermfg=16 ctermbg=172
