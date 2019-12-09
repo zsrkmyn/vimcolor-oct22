@@ -44,10 +44,10 @@ hi WildMenu       ctermfg=202 ctermbg=238
 hi StatusLine     ctermbg=0 ctermfg=243
 hi Folded         ctermfg=38 ctermbg=238
 hi FoldColumn     ctermfg=38 ctermbg=238
-hi DiffAdd        cterm=None ctermfg=None ctermbg=61
-hi DiffChange     cterm=None ctermfg=None ctermbg=89
-hi DiffDelete     cterm=None ctermfg=None ctermbg=61
-hi DiffText       cterm=None ctermfg=111 ctermbg=90
+hi DiffAdd        cterm=None ctermfg=None ctermbg=237
+hi DiffChange     cterm=None ctermfg=None ctermbg=237
+hi DiffDelete     cterm=None ctermfg=None ctermbg=237
+hi DiffText       cterm=None ctermfg=111 ctermbg=53
 hi SignColumn     ctermfg=4 ctermbg=238
 hi Conceal        ctermfg=7 ctermbg=242
 hi SpellBad       ctermbg=16
