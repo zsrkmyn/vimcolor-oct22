@@ -24,7 +24,7 @@ hi Normal         ctermbg=234
 hi SpecialKey     ctermfg=4
 hi link EndOfBuffer NonText
 hi NonText        ctermfg=12
-hi Directory      ctermfg=4
+hi Directory      ctermfg=98
 hi ErrorMsg       ctermfg=15 ctermbg=124
 hi IncSearch      cterm=reverse
 hi Search         cterm=reverse ctermfg=214 ctermbg=234
@@ -70,7 +70,7 @@ hi StorageClass   cterm=NONE ctermfg=105 ctermbg=NONE
 hi Structure      cterm=NONE ctermfg=105 ctermbg=NONE
 hi Comment        cterm=NONE ctermfg=37 ctermbg=NONE
 hi Constant       cterm=NONE ctermfg=33 ctermbg=NONE
-hi Special        cterm=NONE ctermfg=63 ctermbg=NONE
+hi Special        cterm=NONE ctermfg=133 ctermbg=NONE
 hi Identifier     cterm=NONE ctermfg=39 ctermbg=NONE
 hi Statement      cterm=NONE ctermfg=203 ctermbg=NONE
 hi PreProc        cterm=NONE ctermfg=169 ctermbg=NONE
