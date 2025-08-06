@@ -6,8 +6,8 @@
 
 " *NOTE*:
 " This file is for 256-color terminal only!
-" If it does't work in a non-256-color terminal.
-" Please check `TERM' environment variable.
+" If it doesn't work in a 256-color terminal,
+" please check `TERM' environment variable.
 
 hi clear Normal
 set bg&
@@ -17,9 +17,14 @@ if exists("syntax_on")
 	syntax reset
 endif
 
+if has("termguicolors") && !has("gui_running")
+	set notermguicolors
+endif
+
 let g:colors_name = "oct22"
 
 hi Normal         ctermbg=234
+hi NormalFloat    ctermfg=252 ctermbg=237
 
 hi SpecialKey     ctermfg=4
 hi link EndOfBuffer NonText
@@ -39,25 +44,26 @@ hi VertSplit      cterm=reverse
 hi Title          ctermfg=96
 hi Visual         ctermbg=239
 hi clear VisualNOS
-hi WarningMsg     ctermfg=124
-hi WildMenu       ctermfg=202 ctermbg=238
-hi StatusLine     ctermbg=0 ctermfg=243
-hi Folded         ctermfg=38 ctermbg=238
-hi FoldColumn     ctermfg=38 ctermbg=238
+hi WarningMsg     cterm=None ctermfg=124
+hi WildMenu       cterm=None ctermfg=202 ctermbg=238
+hi StatusLine     cterm=None ctermbg=0 ctermfg=243
+hi Folded         cterm=None ctermfg=38 ctermbg=238
+hi FoldColumn     cterm=None ctermfg=38 ctermbg=238
 hi DiffAdd        cterm=None ctermfg=None ctermbg=237
 hi DiffChange     cterm=None ctermfg=None ctermbg=237
 hi DiffDelete     cterm=None ctermfg=None ctermbg=237
 hi DiffText       cterm=None ctermfg=111 ctermbg=53
-hi SignColumn     ctermfg=4 ctermbg=238
-hi Conceal        ctermfg=7 ctermbg=242
-hi SpellBad       ctermbg=16
-hi SpellCap       ctermbg=24
-hi SpellRare      ctermbg=54
-hi SpellLocal     ctermbg=23
-hi Pmenu          ctermfg=202 ctermbg=238
-hi PmenuSel       ctermfg=16 ctermbg=248
-hi PmenuSbar      ctermbg=238
-hi PmenuThumb     ctermbg=244
+hi SignColumn     cterm=None ctermfg=4 ctermbg=238
+hi Conceal        cterm=None ctermfg=7 ctermbg=242
+hi SpellBad       cterm=None ctermbg=16
+hi SpellCap       cterm=None ctermbg=24
+hi SpellRare      cterm=None ctermbg=54
+hi SpellLocal     cterm=None ctermbg=23
+hi clear Pmenu
+hi link Pmenu NormalFloat
+hi PmenuSel       cterm=None ctermfg=16 ctermbg=248
+hi PmenuSbar      cterm=None ctermbg=238
+hi PmenuThumb     cterm=None ctermbg=244
 hi TabLine        cterm=underline ctermbg=16 ctermfg=249
 hi TabLineSel     cterm=underline ctermbg=24 ctermfg=249
 hi TabLineFill    ctermbg=16 ctermfg=16
@@ -79,3 +85,15 @@ hi Underlined     cterm=underline ctermfg=51
 hi Ignore         cterm=NONE ctermfg=16 ctermbg=NONE
 hi Todo           ctermfg=16 ctermbg=172
 hi Error          ctermfg=16 ctermbg=160
+
+hi clear String
+hi link String Constant
+hi clear Function
+hi link Function Identifier
+
+hi LspReferenceRead   cterm=none ctermfg=none ctermbg=023
+hi LspReferenceWrite cterm=none ctermfg=none ctermbg=054
+hi link LspReferenceText LspReferenceWrite
+hi link LspSignatureActiveParameter LspReferenceRead
+
+hi Member         cterm=none ctermfg=81
