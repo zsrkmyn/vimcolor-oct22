@@ -6,8 +6,8 @@
 
 " *NOTE*:
 " This file is for 256-color terminal only!
-" If it does't work in a non-256-color terminal.
-" Please check `TERM' environment variable.
+" If it doesn't work in a 256-color terminal,
+" please check `TERM' environment variable.
 
 hi clear Normal
 set bg&
@@ -15,6 +15,10 @@ set bg&
 hi clear
 if exists("syntax_on")
 	syntax reset
+endif
+
+if has("termguicolors") && !has("gui_running")
+	set notermguicolors
 endif
 
 let g:colors_name = "oct22"
@@ -48,16 +52,16 @@ hi DiffAdd        cterm=None ctermfg=None ctermbg=237
 hi DiffChange     cterm=None ctermfg=None ctermbg=237
 hi DiffDelete     cterm=None ctermfg=None ctermbg=237
 hi DiffText       cterm=None ctermfg=111 ctermbg=53
-hi SignColumn     ctermfg=4 ctermbg=238
-hi Conceal        ctermfg=7 ctermbg=242
-hi SpellBad       ctermbg=16
-hi SpellCap       ctermbg=24
-hi SpellRare      ctermbg=54
-hi SpellLocal     ctermbg=23
-hi Pmenu          ctermfg=202 ctermbg=238
-hi PmenuSel       ctermfg=16 ctermbg=248
-hi PmenuSbar      ctermbg=238
-hi PmenuThumb     ctermbg=244
+hi SignColumn     cterm=none ctermfg=4 ctermbg=238
+hi Conceal        cterm=none ctermfg=7 ctermbg=242
+hi SpellBad       cterm=none ctermbg=16
+hi SpellCap       cterm=none ctermbg=24
+hi SpellRare      cterm=none ctermbg=54
+hi SpellLocal     cterm=none ctermbg=23
+hi Pmenu          cterm=none ctermfg=202 ctermbg=238
+hi PmenuSel       cterm=none ctermfg=16 ctermbg=248
+hi PmenuSbar      cterm=none ctermbg=238
+hi PmenuThumb     cterm=none ctermbg=244
 hi TabLine        cterm=underline ctermbg=16 ctermfg=249
 hi TabLineSel     cterm=underline ctermbg=24 ctermfg=249
 hi TabLineFill    ctermbg=16 ctermfg=16
