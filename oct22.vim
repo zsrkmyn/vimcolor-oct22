@@ -42,7 +42,7 @@ hi StatusLine     cterm=none,reverse
 hi StatusLineNC   cterm=reverse
 hi VertSplit      cterm=reverse
 hi Title          ctermfg=96
-hi Visual         ctermbg=239
+hi Visual         cterm=none ctermfg=none ctermbg=239
 hi clear VisualNOS
 hi WarningMsg     cterm=None ctermfg=124
 hi WildMenu       cterm=None ctermfg=202 ctermbg=238
